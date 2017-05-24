@@ -1,0 +1,1 @@
+ipython nbconvert --to latex "my_notebook.ipynb"  <- converts ipynb to .tex file
