@@ -142,8 +142,23 @@ Let $>$ be an order on $\mathbb{C}$.  Assume this turns $\mathbb{C}$ into an ord
 
 \end{problem}
 \begin{problem}{18}
-
+If $k \geq 2$ and $\mathbf{x} \in \mathbb{R}^k$, prove that there exists $\mathbf{y} \in \mathbb{R}^k$ such that $\mathbf{y} \neq \mathbf{0}$ but $\mathbf{x}\cdot \mathbf{y} = 0$.  Is this also true if $k = 1$?
 \end{problem}
+\begin{proof}
+If $\mathbf{x} = \mathbf{0}$, then take $\mathbf{y}$ to be any nonzero vector in $\mathbb{R}^k$.  Otherwise, if $\mathbf{x} \neq \mathbf{0}$ there is an integer $\ell$ satisfying $1\leq \ell \leq k$ such that $x_{\ell} \neq 0$.  Choose an integer $j \neq \ell$ that satisfies $1\leq j \leq k$ (this is possible, since $k \geq 2$).  Then let $\mathbf{y}$ be the vector defined as
+\begin{equation}
+y_j = x_\ell, \hspace{5mm} y_\ell = - x_j, \hspace{5mm} y_i = 0 \hspace{2mm} \text{for} \  i\neq \ell,j
+\end{equation}
+$y_j = x_\ell \neq 0$ implies that $\mathbf{y} \neq \mathbf{0}$ and the inner product $\mathbf{x} \cdot \mathbf{y}$ satisfies:
+\begin{equation}
+\sum_{i = 1}^k y_i x_i = y_j x_j + y_\ell x_\ell = x_\ell x_j - x_j x_\ell = 0
+\end{equation}
+When $k = 1$, the inner product corresponds to standard scalar multiplication.  The result fails for $x = 1$, because if $xy = 0$, we have:
+\begin{equation}
+0 = xy = 1y = y
+\end{equation}
+by the multiplication axioms for a field.  Thus the result does not hold in $\mathbb{R}^1$.
+\end{proof}
 \begin{problem}{19}
 
 \end{problem}
