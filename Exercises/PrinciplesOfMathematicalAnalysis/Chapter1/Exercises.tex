@@ -136,8 +136,28 @@ Let $>$ be an order on $\mathbb{C}$.  Assume this turns $\mathbb{C}$ into an ord
 
 \end{problem}
 \begin{problem}{16}
+(Incomplete) Suppose $k \geq 3$, $\mathbf{x},\mathbf{y} \in \mathbb{R}^k$, $|\mathbf{x}-\mathbf{y}| = d > 0$, and $r > 0$.  Prove:
 
+(a) If $2r > d$, there are infinitely many $\mathbf{z}\in \mathbb{R}^k$ such that
+\begin{equation}
+|\mathbf{z} - \mathbf{x}| = |\mathbf{z} - \mathbf{y}| = r
+\end{equation}
+
+(b) If $2r = d$, there is exactly one such $\mathbf{z}$.
+
+(c) If $2r < d$, there is no such $\mathbf{z}$.
+
+How must these statements be modified if $k$ is 2 or 1?
 \end{problem}
+\begin{proof}
+(a) Since $2r > d$ it follows that $r^2 - (d/2)^2 > 0$.  Then let $\epsilon = \sqrt{r^2 - (d/2)^2} > 0$.  Suppose there is a vector $\mathbf{q} \in \mathbb{R}^k$ such that $|\mathbf{q}| = \epsilon$ and $\mathbf{q} \cdot (\mathbf{y} - \mathbf{x} )= 0$.  Then $\mathbf{z} = \mathbf{x} + \frac{1}{2}(\mathbf{y} - \mathbf{x}) + \mathbf{q}$ will meet the desired requirements: expanding out $|\mathbf{z} - \mathbf{x}|^2 = (\mathbf{z} - \mathbf{x}) \cdot (\mathbf{z} - \mathbf{x})$ and $|\mathbf{z} - \mathbf{y}|^2 = (\mathbf{z} - \mathbf{y}) \cdot (\mathbf{z} - \mathbf{y})$ and using the fact that $\mathbf{q}\cdot \mathbf{y} = \mathbf{q} \cdot \mathbf{x}$ we obtain the identical expression
+\begin{align}
+\frac{1}{4}(\mathbf{y} - \mathbf{x})\cdot (\mathbf{y} - \mathbf{x}) + \mathbf{q}\cdot \mathbf{q} = \left(\frac{d}{2}\right)^2 + \epsilon^2 = r^2
+\end{align}
+as desired.  We now must prove that there are infinitely many such $\mathbf{q}$.  
+
+Since $\mathbf{y} \neq \mathbf{x}$, there exists an integer $j$ satisfying $1\leq j \leq k$ such that $x_j - y_j \neq 0$
+\end{proof}
 \begin{problem}{17}
 
 \end{problem}
