@@ -1,0 +1,449 @@
+\documentclass[12pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Qual}
+\author{Author}
+\maketitle
+ 
+ CHAPTER 1
+ 
+\begin{problem}{}
+What's the difference between conditioning and stability?
+\end{problem}
+
+\begin{problem}{}
+What is a "problem"?
+\end{problem}
+
+\begin{problem}{}
+How do you measure conditioning?
+\end{problem}
+\begin{problem}{}
+Does conditioning always depend on "$x$" (the input)?
+\end{problem}
+\begin{problem}{}
+Derive the conditioning of solving a Linear Least Squares problem.
+\end{problem}
+
+\begin{problem}{}
+What is a floating point number?
+\end{problem}
+\begin{problem}{}
+How would you add two numbers in a floating point system?
+\end{problem}
+\begin{problem}{}
+Can anything catastrophic happen when adding two numbers?
+\end{problem}
+What is a normalized floating point system?
+\begin{problem}{}
+Why would you normalize?
+\end{problem}
+\begin{problem}{}
+What's a problem with a normalized floating point system?
+\end{problem}
+\begin{problem}{}
+How would you fix this problem?
+\end{problem}
+
+\begin{problem}{}
+(Depends on getting the last two problems correct)  What kind of number is this?
+\end{problem}
+
+CHAPTER 2
+
+\begin{problem}{}
+Write down the LU algorithm.
+\end{problem}
+
+\begin{problem}{}
+Add pivoting.
+\end{problem}
+
+\begin{problem}{}
+Why might you want to compute $a_{kk}^{-1}$ outside of the loop?
+
+\ 
+
+\ 
+
+Hints they gave me: How many divisions are there?  How does a computer do division?
+\end{problem}
+
+CHAPTER 4
+
+\begin{problem}{}
+What method would you use to find all eigenvalues of a matrix?
+\end{problem}
+\begin{problem}{}
+Would you do this directly?  What is the operation count?
+\end{problem}
+\begin{problem}{}
+What method would you use to find the largest eigenvalue?  The smallest?  The closest to 3?
+\end{problem}
+\begin{problem}{}
+(Responding to an answer of mine) Shifted inverse iteration gives you eigenvalues of $A$?  How?
+\end{problem}
+
+\begin{problem}
+Does power iteration give you an eigenvalue?  How exactly would you obtain the eigenvalue with this method?
+\end{problem}
+
+CHAPTER 5
+
+\begin{problem}{}
+What is a nonlinear equation?  Write down the general form.
+\end{problem}
+
+\begin{problem}{}
+Express the error in the solution of a root-finding problem.
+\end{problem}
+\begin{problem}{}
+In the bisection method, how do you define error?
+\end{problem}
+
+\begin{problem}{}
+What is the convergence rate of the bisection method?
+\end{problem}
+
+\begin{problem}{}
+What exactly does "convergence rate" mean?
+\end{problem}
+
+\begin{problem}{}
+(Response to my answer)  Why did you take a limit?
+\end{problem}
+
+\begin{problem}{}
+What are some important/special cases of convergence rates?
+\end{problem}
+
+\begin{problem}{}
+What characterizes quadratic convergence?
+\end{problem}
+
+\begin{problem}{}
+What if you wanted a faster method than bisection?
+\end{problem}
+
+\begin{problem}{}
+What is Newton's method?
+\end{problem}
+
+\begin{problem}{}
+What kind of method is Newton's method?
+\end{problem}
+
+\begin{problem}{}
+What is the convergence rate of Newton's method?
+\end{problem}
+
+\begin{problem}{}
+What is the complexity?  Per iteration?
+\end{problem}
+
+\begin{problem}{}
+How does this method compare with the bisection method?
+\end{problem}
+
+\begin{problem}{}
+What if computing $f'(x_k)$ is inconvenient?
+\end{problem}
+
+\begin{problem}{}
+What is the convergence rate of the secant method?
+\end{problem}
+
+\begin{problem}{}
+What is $n$-dimensional Newton's method?
+\end{problem}
+
+\begin{problem}{}
+(Response to my answer)  Why did you write "solve" instead of $J_f^{-1}(x_k)$?
+\end{problem}
+
+\begin{problem}{}
+When does this method fail?
+\end{problem}
+
+\begin{problem}{}
+What could you do if you encounter a singular Jacobian?
+\end{problem}
+
+CHAPTER 7/8
+
+\begin{problem}{}
+What is interpolation?
+\end{problem}
+
+\begin{problem}{}
+What is the order of accuracy of interpolation?
+\end{problem}
+
+\begin{problem}{}
+Describe a naive way to solve an interpolation problem.
+\end{problem}
+
+\begin{problem}{}
+What is it called when you use uniformly spaced nodes?
+\end{problem}
+
+\begin{problem}{}
+What happens when you use high order polynomials with evenly spaced nodes?
+\end{problem}
+
+\begin{problem}{}
+(Response to my answer).  What are oscillations like that called?
+\end{problem}
+
+\begin{problem}{}
+Where do oscillations occur?
+\end{problem}
+
+\begin{problem}{}
+If interpolation is order $n$, what causes this problem?
+\end{problem}
+
+\begin{problem}{}
+How would you solve this problem?
+\end{problem}
+
+\begin{problem}{}
+What if you need to use a lot of points?
+\end{problem}
+
+\begin{problem}{}
+What needs to be taken into account when using piecewise interpolation?
+\end{problem}
+
+\begin{problem}{}
+What are the functions used in piecewise interpolation called?
+\end{problem}
+
+\begin{problem}{}
+Cubic splines could satisfy what properties between subintervals?
+\end{problem}
+
+\begin{problem}
+What kind of functions are well approximated by polynomials?
+\end{problem}
+
+\begin{problem}{}
+What is the conditioning of integration?
+\end{problem}
+
+\begin{problem}{}
+What is a quadrature rule?
+\end{problem}
+
+\begin{problem}{}
+What is your favorite method for determining a quadrature rule?  Describe it.
+\end{problem}
+
+\begin{problem}{}
+What is the order of accuracy for quadrature?
+\end{problem}
+
+\begin{problem}{}
+How does what we talked about evenly spaced nodes apply in interpolation apply to quadrature?
+\end{problem}
+
+\begin{problem}{}
+Using evenly spaced nodes is called what?
+\end{problem}
+
+\begin{problem}{}
+Using Chebyshev points is called what?
+\end{problem}
+
+\begin{problem}{}
+What is Gaussian quadrature?
+\end{problem}
+
+\begin{problem}{}
+How do you find the weights and nodes for Gaussian quadrature?
+\end{problem}
+
+\begin{problem}{}
+What is the disadvantage of that method?
+\end{problem}
+
+\begin{problem}{}
+Why would you use composite quadrature?
+\end{problem}
+
+\begin{problem}{}
+What problem does composite quadrature alleviate?
+\end{problem}
+
+\begin{problem}{}
+What is Richardson extrapolation?
+\end{problem}
+
+\begin{problem}{}
+If I had a large interval what could I do?
+\end{problem}
+
+
+\begin{problem}{}
+If I used Richardson extrapolation with the composite trapezoid rule, what would the order of accuracy be?
+\end{problem}
+
+ODES
+
+\begin{problem}{}
+Write down the $2\times 2$ system of ODEs that describe a circular orbit
+\end{problem}
+
+\begin{problem}{}
+How would you solve it? (The next three questions were because I picked a bad method)
+\end{problem}
+
+\begin{problem}{}
+Is that a stable method?  What is the growth factor?
+\end{problem}
+
+\begin{problem}{}
+Draw the stability diagram for Forward Euler.
+\end{problem}
+
+\begin{problem}{}
+Why can't we solve this problem with it?
+\end{problem}
+
+\begin{problem}{}
+Can you choose a stable method?
+\end{problem}
+
+\begin{problem}{}
+What is the growth factor?  Draw the stability diagram.
+\end{problem}
+
+\begin{problem}{}
+Will the numerical solution have a circular orbit?
+\end{problem}
+
+\begin{problem}{}
+What is a method with a stability region that touches the imaginary axis?
+\end{problem}
+
+\begin{problem}{}
+(I must have picked a bad method) Can you think of a more accurate method?
+\end{problem}
+
+\begin{problem}{}
+Is the trapezoidal method stable for this problem?  Will it give you a circular orbit?  What can you say about it in general?
+\end{problem}
+
+\begin{problem}{}
+For this method's general stability region, can you find a $\lambda$ such that the growth factor is 1?
+\end{problem}
+
+PDEs
+
+\begin{problem}{}
+What are types of PDE's and give some examples.
+\end{problem}
+
+\begin{problem}{}
+Describe these types of PDE's
+\end{problem}
+
+\begin{problem}{}
+What is meant by "time" why can't I replace $u_{yy}$ with $u_{tt}$ in an elliptic equation?
+\end{problem}
+
+\begin{problem}{}
+(In response) So these characterizations are not complete without conditions?  What conditions must be enforced on each for a well-posed problem?
+\end{problem}
+
+\begin{problem}{}
+(Interrupt when I was describing parabolic equation) What about parabolic equations in unbounded domains?
+\end{problem}
+
+\begin{problem}{}
+What is the advection equation?
+\end{problem}
+
+\begin{problem}{}
+Let's say $x\in [0,1]$, what boundary or initial conditions do we need for the advection equation?
+\end{problem}
+
+\begin{problem}{}
+What are curves where the solution is constant called?
+\end{problem}
+
+\begin{problem}{}
+What is the analytic solution for this problem? (With the boundary and initial conditions from two questions ago).
+\end{problem}
+
+\begin{problem}{}
+(Still discussing advection problem in $[0,1]$) Would initial conditions in $x$ be relevant for the entire domain?
+\end{problem}
+
+\begin{problem}{}
+How would you solve this (same) problem?
+\end{problem}
+
+\begin{problem}{}
+(Response to my answer) Why did you use backward difference in the spatial derivative?  What is this called?
+\end{problem}
+
+\begin{problem}{}
+When is this method stable?  Can we use an arbitrarily big time step? How big can it get?  What is that condition called?  Can you give a geometric argument for why this restriction must be obeyed?
+\end{problem}
+
+\begin{problem}{}
+How could you solve the Poisson equation?
+\end{problem}
+
+\begin{problem}{}
+(I said finite elements to the last question)
+Put the Poisson equation into weak form.
+\end{problem}
+
+\begin{problem}{}
+How would you solve this algebraically?
+\end{problem}
+
+\begin{problem}{}
+What is special about the matrix that results from this method?
+\end{problem}
+
+\begin{problem}{}
+Is it always sparse?
+\end{problem}
+
+\begin{problem}{}
+What do functions in $H_0^1$ look like?
+\end{problem}
+
+\begin{problem}{}
+(I said something about piecewise polynomials to the last question)  Piecewise polynomials over what?
+\end{problem}
+
+\begin{problem}{}
+What restrictions must be placed on piecewise linear functions to ensure they are in $H^1_0$?
+\end{problem}
+
+\begin{problem}{}
+Do we have to use piecewise linears for the finite element method?
+\end{problem}
+
+
+\end{document}

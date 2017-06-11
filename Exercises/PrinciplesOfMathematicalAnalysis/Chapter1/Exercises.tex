@@ -156,7 +156,39 @@ How must these statements be modified if $k$ is 2 or 1?
 \end{align}
 as desired.  We now must prove that there are infinitely many such $\mathbf{q}$.  
 
-Since $\mathbf{y} \neq \mathbf{x}$, there exists an integer $j$ satisfying $1\leq j \leq k$ such that $x_j - y_j \neq 0$
+Since $|\mathbf{x} - \mathbf{y} | > 0$, we have $\mathbf{x} \neq \mathbf{y}$ and so there exists an integer $j$ satisfying $1\leq j \leq k$ such that $y_j - x_j \neq 0$.  Choose two other distinct integers $i, p$ that satisfy $1 \leq i,p \leq k$, and $i,p \neq j$ (this is possible since $k\geq 3$).\par
+Let $\alpha = (y_j - x_j) \neq 0$, $\beta = (y_i - x_i)$ and $\gamma = (y_p - x_p)$.  Let $q_p\in \mathbb{R}$ satisfying:
+\begin{equation}\label{qp}
+|q_p| \leq \epsilon \left( \frac{\beta^2 + \alpha^2}{\gamma^2 + \beta^2 + \alpha^2}\right)^{1/2}
+\end{equation}
+The number on the right hand side of equation (\ref{qp}) is well-defined and positive, hence, there are infinitely many such $q_p$.\par
+For some such $q_p$, consider the quadratic equation in the variable $q_i$:
+\begin{equation}\label{quadratic}
+q_i^2\left(\frac{\beta^2 + \alpha^2}{\alpha^2}\right) + q_i\frac{2q_p\beta\gamma}{\alpha^2} + q_p^2\frac{\gamma^2 + \alpha^2}{\alpha^2} - \epsilon^2 = 0
+\end{equation}
+There is at least one solution to this equation if the discriminant is non-negative.  After expanding out the discriminant and some algebra, it can be shown that the discriminant is non-negative if and only if (\ref{qp}) holds.  Thus at least one number $q_i$ satisfies this equation; let $q_i$ take this value. \par
+Finally, define $q_j$ as:
+\begin{equation}\label{qj}
+ q_j = \frac{-1}{\alpha}(\beta q_i + \gamma q_p)  
+ \end{equation}
+ Let $\mathbf{q} \in \mathbb{R}^k$ be a vector satisfying:
+\begin{align}
+&\mathbf{q}_i = q_i \\
+&\mathbf{q}_p = q_p \\
+&\mathbf{q}_j = q_j \\
+&\mathbf{q}_n = 0 \hspace{3mm} \text{if} \ n\neq i,p,j
+\end{align}
+Then $\mathbf{q} \cdot (\mathbf{y} - \mathbf{x}) = 0$ by appealing to equation (\ref{qj}) and the definition of $\gamma$, $\alpha$, and $\beta$.  Furthermore, the equation
+\begin{equation}
+|\mathbf{q}|^2 = q_i^2 + q_j^2 + q_p^2 = \epsilon^2
+\end{equation}
+is shown to be equivalent to equation (\ref{quadratic}) after plugging in expression (\ref{qj}) for $q_j$ and some algebra.  By construction, this equation holds and so we have $|\mathbf{q}| = \epsilon$.  Thus $\mathbf{q}$ satisfies the properties given at the start of the proof.  Since there are infinitely many $q_p$ that satisfy equation (\ref{qp}) there are infinitely many such $\mathbf{q}$ and the result follows.
+
+\vspace{5mm}
+
+(b) (Solve problem 13 first)
+
+
 \end{proof}
 \begin{problem}{17}
 
