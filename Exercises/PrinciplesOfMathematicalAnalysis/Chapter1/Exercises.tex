@@ -127,7 +127,20 @@ Let $>$ be an order on $\mathbb{C}$.  Assume this turns $\mathbb{C}$ into an ord
 
 \end{problem}
 \begin{problem}{13}
-
+If $x,y$ are complex, prove that
+\begin{equation}\label{p13}
+\bigl||x| - |y|\bigr| \leq |x - y|
+\end{equation}
+\begin{proof}
+First, we use the identities $x = x - y + y$ and $y = y - x + x$.  Applying the triangle inequality to both $x$ and $y$ lead to:
+\begin{align}\label{p132}
+\begin{split}
+&|x| \leq |x - y| + |y| \implies |x| - |y| \leq |x-y| \\
+&|y| \leq |y - x| + |x| = |x - y| + |x| \implies |y| - |x| \leq |x-y|
+\end{split}
+\end{align}
+combining the two inequalities in (\ref{p132}) implies (\ref{p13})
+\end{proof}
 \end{problem}
 \begin{problem}{14}
 
