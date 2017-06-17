@@ -152,7 +152,7 @@ combining the two inequalities in (\ref{p132}) implies (\ref{p13})
 (Incomplete) Suppose $k \geq 3$, $\mathbf{x},\mathbf{y} \in \mathbb{R}^k$, $|\mathbf{x}-\mathbf{y}| = d > 0$, and $r > 0$.  Prove:
 
 (a) If $2r > d$, there are infinitely many $\mathbf{z}\in \mathbb{R}^k$ such that
-\begin{equation}
+\begin{equation}\label{16_hypothesis}
 |\mathbf{z} - \mathbf{x}| = |\mathbf{z} - \mathbf{y}| = r
 \end{equation}
 
@@ -199,9 +199,28 @@ is shown to be equivalent to equation (\ref{quadratic}) after plugging in expres
 
 \vspace{5mm}
 
-(b) (Solve problem 13 first)
+(b) We first prove if $|\mathbf{w}| = d$ then there is exactly one $\tilde{\mathbf{z}} \in \mathbb{R}^k$ such that
+\begin{equation}\label{ztilde}
+ |\tilde{\mathbf{z}} - \mathbf{w}| = d/2 = |\tilde{\mathbf{z}}|
+ \end{equation}
+First, if (\ref{ztilde}) holds, by the definition of norms,  we have:
+\begin{equation}
+0 = (\tilde{\mathbf{z}} - \mathbf{w})\cdot (\tilde{\mathbf{z}} - \mathbf{w}) - \tilde{\mathbf{z}}\cdot \tilde{\mathbf{z}} = \tilde{\mathbf{z}} \cdot \tilde{\mathbf{z}} - 2\tilde{\mathbf{z}}\cdot \mathbf{w} + \mathbf{w}\cdot\mathbf{w} - \tilde{\mathbf{z}}\cdot \tilde{\mathbf{z}} = d^2 - 2\tilde{\mathbf{z}}\cdot \mathbf{w}.
+\end{equation}
+Hence, $d^2/2 = \tilde{\mathbf{z}}\cdot \mathbf{w}$.  Using this fact we have
+\begin{align}
+\begin{split}
+\left(\tilde{\mathbf{z}} - \frac{1}{2}\mathbf{w}\right)\cdot \left(\tilde{\mathbf{z}} - \frac{1}{2}\mathbf{w}\right) = \tilde{\mathbf{z}}\cdot\tilde{\mathbf{z}} - \tilde{\mathbf{z}}\cdot\mathbf{w} + \frac{1}{4}\mathbf{w}\cdot\mathbf{w} \\
+= \frac{d^2}{4} - \frac{d^2}{2} + \frac{d^2}{4} = 0
+\end{split}
+\end{align}
+Hence $\left| \tilde{\mathbf{z}} - \frac{1}{2}\mathbf{w} \right|^2 = 0$, which implies $\tilde{\mathbf{z}} = \frac{1}{2}\mathbf{w}$.  Conversely, if $\tilde{\mathbf{z}} = \frac{1}{2}\mathbf{w}$, then equation (\ref{ztilde}) holds by simple computation.  Thus, $\tilde{\mathbf{z}}$ exists and is unique.\par
 
-
+Now, suppose $|\mathbf{x} - \mathbf{y}| = d$.  By the previous result, we know $\tilde{\mathbf{z}} = \frac{1}{2}(\mathbf{x} - \mathbf{y})$ is the unique vector satisfying $|\tilde{\mathbf{z}} - (\mathbf{x} - \mathbf{y})| = d/2 = |\tilde{\mathbf{z}}|$.  This is equivalent to
+\begin{equation}
+|(\tilde{\mathbf{z}} + \mathbf{y}) - \mathbf{x}| = d/2 = |(\tilde{\mathbf{z}} + \mathbf{y}) - \mathbf{y}|
+\end{equation}
+By the uniqueness of $\tilde{\mathbf{z}}$, it follows that $\mathbf{z} = \tilde{\mathbf{z}} + \mathbf{y}$ is the unique vector satisfying (\ref{16_hypothesis}) with $r = d/2$.
 \end{proof}
 \begin{problem}{17}
 
